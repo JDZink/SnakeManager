@@ -1,0 +1,48 @@
+body {
+	background-image: url("../img/bg/Scalesbg.jpg");
+	background-repeat: repeat;
+	background-position: fixed;
+}
+
+h1 {
+	font-family: Snell Roundhand, cursive;
+	text-align: center;
+	color: white;
+	font-size: 3em;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.dropdownList{
+   height: 34px;
+   background: rgba(150, 0, 0, 0.66);
+   border: 1px solid #ccc;
+   font-size: 1em;
+   color: #ffffff;
+}
+
+input[type=text] {
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    font-size: 1em;
+    opacity 0.5;
+}
+
+input[type=text]:focus {
+    opacity 1.0;
+}
+
+input[type=submit]{
+	color: rgba(150, 0, 0, 1.0);
+	background: rgba(255, 255, 255, 1.0);
+	font-size: 1em;
+	border-radius: 5px;
+}
+
+button{
+	color: rgba(150, 0, 0, 1.0);
+	background: rgba(255, 255, 255, 1.0);
+	font-size: 1em;
+	border-radius: 5px;
+}

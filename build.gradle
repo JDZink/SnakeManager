@@ -1,0 +1,39 @@
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+
+group = 'SnakeManager'
+version = '0.0.1-SNAPSHOT'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+project.webAppDirName = 'WebContent'
+
+repositories {
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+eclipse {
+	classpath {
+		downloadSources = true
+	}
+}
+
+war{
+	archiveName='SnakeManager.war'
+	
+	}
+
+
+ 
+dependencies {
+   compile group: 'org.springframework', name: 'spring-webmvc', version:'4.3.2.RELEASE'
+    compile group: 'javax.servlet', name: 'javax.servlet-api', version:'3.1.0'
+    compile group: 'javax.servlet', name: 'jstl', version:'1.2'
+    compile group: 'junit', name: 'junit', version:'4.12'
+    compile group: 'org.springframework', name: 'spring-test', version:'4.3.2.RELEASE'
+}
+
